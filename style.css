@@ -1,0 +1,389 @@
+:root {
+  --background-header: #356EA9;
+  --background: #E9ECF8;
+  --bg-color: #F9F9F9;
+  --bt-color: #D8DFE8;
+  --hover-button: #0A3871;
+  --text: #fff;
+  --sub-text: #495057;
+  --switch: url(assets/sun-color.png);
+}
+
+.dark:root {
+  --background-header: #052051;
+  --background: #868E96;
+  --bg-color: #ADB5BD;
+  --bt-color: #ADB5BD;
+  --hover-button: #0A3871;
+  --text: #fff;
+  --sub-text: #495057;
+  --switch: url(assets/moon-color.png);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  padding: 0px 450px;
+  background-color: var(--background-header);
+}
+
+.nav-bar .bt-nav {
+  width: 48px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background: var(--switch);
+}
+
+.bg-nav:hover {
+  transform: scale(1.10);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30.5px 0px;
+  gap: 50px;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--background-header);
+  background-color: var(--background);
+}
+
+::placeholder {
+  color: var(--background-header);
+}
+
+.warning {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--sub-text);
+}
+
+.buttons {
+  display: flex;
+  margin: 15px 0px;
+  gap: 25px;
+}
+
+.bt-crypt {
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  background-color: var(--background-header);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.bt-decry {
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--background-header);
+  background-color: var(--bt-color);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.bt-crypt:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: var(--hover-button);
+}
+
+.bt-decry:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: var(--text);
+  background-color: var(--hover-button);
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 747px;
+  gap: 25px;
+  border-radius: 50px;
+  background-color: var(--bg-color);
+  box-shadow: 10px 10px var(--background-header);
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  width: 250px;
+}
+
+.message img {
+  width: 336px;
+  height: 304px;
+}
+
+.message strong {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.message span {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--sub-text);
+}
+
+.result {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result-text {
+  width: 325px;
+  padding-top: 25px;
+  background-color: var(--bg-color);
+}
+
+.clipboard {
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--background-header);
+  background-color: var(--bg-color);
+  border: 1px solid var(--background-header);
+}
+
+.clipboard:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: var(--text);
+  background-color: var(--hover-button);
+}
+
+.notification-clipboard {
+  display: none;
+  position: fixed;
+  margin: 550px 0px 0px 0px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: var(--text);
+  background-color: var(--hover-button);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  height: 75px;
+  background-color: var(--background-header);
+}
+
+footer h2 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+footer span {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 0px 75px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 30.5px 0px;
+    gap: 20px;
+  }
+
+  textarea {
+    width: 450px;
+    height: 224px;
+    font-size: 24px;
+  }
+
+  .warning {
+    justify-content: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bt-crypt, .bt-decry {
+    width: 215px;
+  }
+
+  aside {
+    width: 450px;
+    height: 300px;
+  }
+
+  .message .thumbnail {
+    display: block;
+    object-fit: cover;
+    width: 150px;
+    height: 125px;
+  }
+
+  .message strong {
+    font-size: 18px;
+  }
+
+  .message span {
+    font-size: 14px;
+  }
+
+  .result {
+    gap: 25px;
+  }
+
+  .result-text {
+    width: 450px;
+    height: 174px;
+    padding: 20px;
+    font-size: 24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .result .clipboard {
+    width: 215px;
+  }
+
+  .notification-clipboard {
+    margin: 140px 0px 0px 0px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-bar {
+    padding: 0px 75px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 30.5px 0px;
+    gap: 20px;
+  }
+
+  textarea {
+    width: 450px;
+    height: 224px;
+    font-size: 24px;
+  }
+
+  .warning {
+    justify-content: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bt-crypt, .bt-decry {
+    width: 215px;
+  }
+
+  aside {
+    width: 450px;
+    height: 300px;
+  }
+
+  .message .thumbnail {
+    display: block;
+    object-fit: cover;
+    width: 150px;
+    height: 125px;
+  }
+
+  .message strong {
+    font-size: 18px;
+  }
+
+  .message span {
+    font-size: 14px;
+  }
+
+  .result {
+    gap: 25px;
+  }
+
+  .result-text {
+    width: 450px;
+    height: 174px;
+    padding: 20px;
+    font-size: 24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .result .clipboard {
+    width: 215px;
+  }
+
+  .notification-clipboard {
+    margin: 140px 0px 0px 0px;
+    padding: 10px 20px;
+  }
+}

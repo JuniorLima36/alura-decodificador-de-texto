@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/Logo.svg" type="image/svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <title>Decodificador</title>
+</head>
+<body>
+  <div class="container">
+    <header class="nav-bar">
+      <img class="logo" src="assets/Logo.svg" alt="">
+      <button class="bt-nav">
+        <img src="" alt="">
+      </button>
+    </header>
+    <main class="content">
+      <section>
+        <textarea 
+          name="" 
+          id="" 
+          class="text-area"
+          placeholder="Digite seu texto" 
+          spellcheck="false"
+          cols="30" 
+          rows="15"
+        ></textarea>
+        <section class="warning">
+          <img src="assets/exclamation.svg" alt="">
+          <span>Apenas letras minúsculas e sem acento.</span>
+        </section>
+        <section class="buttons">
+          <button class="bt-crypt" onclick="buttonEncrypt()">Criptografar</button>
+          <button class="bt-decry" onclick="buttonDecrypt()">Descriptografar</button>
+        </section>
+      </section>
+      <aside>
+        <header class="message" id="message">
+          <img class="thumbnail" src="assets/thumbnail.svg" alt="">
+          <strong>Nenhuma mensagem encontrada</strong>
+          <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+        </header>
+        <header class="result" id="result">
+          <textarea 
+            class="result-text" 
+            name="" id=""
+            spellcheck="false" 
+            cols="19" 
+            rows="15"
+          ></textarea>
+          <button class="clipboard" onclick="copyClipboard()">Copiar</button>
+          <div class="notification-clipboard" id="notification-clipboard">Conteúdo copiado!</div>
+        </header>
+      </aside>
+    </main>
+    <footer>
+      <h2>Alura Challenge - Oracle Next Education</h2>
+      <span>
+        Desenvolvido por 
+        <a href="https://github.com/juniorlima36" target="_blank">JuniorLima36</a>
+      </span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
