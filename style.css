@@ -244,7 +244,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
   .nav-bar {
-    padding: 0px 75px;
+    padding: 0px 100px;
   }
 
   .content {
@@ -254,8 +254,8 @@ footer a:hover {
   }
 
   textarea {
-    width: 450px;
-    height: 224px;
+    width: 575px;
+    height: 222px;
     font-size: 24px;
   }
 
@@ -269,11 +269,11 @@ footer a:hover {
   }
 
   .bt-crypt, .bt-decry {
-    width: 215px;
+    width: 275px;
   }
 
   aside {
-    width: 450px;
+    width: 575px;
     height: 300px;
   }
 
@@ -297,8 +297,8 @@ footer a:hover {
   }
 
   .result-text {
-    width: 450px;
-    height: 174px;
+    width: 575px;
+    height: 175px;
     padding: 20px;
     font-size: 24px;
     border-top-left-radius: 20px;
@@ -306,7 +306,7 @@ footer a:hover {
   }
 
   .result .clipboard {
-    width: 215px;
+    width: 375px;
   }
 
   .notification-clipboard {
@@ -315,9 +315,9 @@ footer a:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .nav-bar {
-    padding: 0px 75px;
+    padding: 0px 35px;
   }
 
   .content {
@@ -327,7 +327,7 @@ footer a:hover {
   }
 
   textarea {
-    width: 450px;
+    width: 325px;
     height: 224px;
     font-size: 24px;
   }
@@ -338,15 +338,17 @@ footer a:hover {
 
   .buttons {
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   .bt-crypt, .bt-decry {
-    width: 215px;
+    width: 325px;
   }
 
   aside {
-    width: 450px;
+    width: 325px;
     height: 300px;
   }
 
@@ -370,7 +372,7 @@ footer a:hover {
   }
 
   .result-text {
-    width: 450px;
+    width: 325px;
     height: 174px;
     padding: 20px;
     font-size: 24px;
