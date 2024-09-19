@@ -319,56 +319,72 @@ footer a:hover {
   .nav-bar {
     padding: 0px 75px;
   }
+
   .content {
     flex-direction: column;
     padding: 30.5px 0px;
     gap: 20px;
   }
+
+  .content section {
+    width: 325px;
+  }
+
   textarea {
-    width: 450px;
+    width: 325px;
     height: 224px;
     font-size: 24px;
   }
+
   .warning {
     justify-content: center;
   }
+
   .buttons {
     display: flex;
     justify-content: center;
   }
+
   .bt-crypt, .bt-decry {
     width: 215px;
   }
+
   aside {
-    width: 450px;
+    width: 325px;
     height: 300px;
   }
+
   .message .thumbnail {
     display: block;
     object-fit: cover;
     width: 150px;
     height: 125px;
   }
+  
   .message strong {
     font-size: 18px;
   }
   .message span {
     font-size: 14px;
   }
+
   .result {
     gap: 25px;
   }
+
   .result-text {
-    width: 450px;
+    width: 325px;
     height: 174px;
     padding: 20px;
     font-size: 24px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
+
   .result .clipboard {
     width: 215px;
   }
+
   .notification-clipboard {
     margin: 140px 0px 0px 0px;
     padding: 10px 20px;
