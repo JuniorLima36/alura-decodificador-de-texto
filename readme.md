@@ -1,4 +1,4 @@
-# Descodificador de texto
+# 🚀 Decodificador de texto
 
 Bem-vindo ao projeto de criptografia de texto! Neste projeto, é possivel fazer a criptografa e descriptografa textos.
 
@@ -8,7 +8,7 @@ Bem-vindo ao projeto de criptografia de texto! Neste projeto, é possivel fazer 
 gaitober" => "gato"
 ```
 
-## Descrição
+## 📋 Descrição
 
 A criptografia segue seguintes regras:
 
@@ -26,7 +26,7 @@ O resultado da criptografia ou descriptografia é exibido na tela.
 
 Há botão que permite que o usuário copie o texto criptografado/descriptografado para a área de transferência, podendo colar o resultado em outro local.
 
-## Como Usar
+## ▶️ Como Usar
 Para utilizar o descodificador de texto, basta seguir os seguintes passos:
 
 1. Acesse a página da aplicação [clicando aqui](https://juniorlima36.github.io/alura-decodificador-de-texto/).
@@ -36,11 +36,11 @@ Para utilizar o descodificador de texto, basta seguir os seguintes passos:
 5. O resultado da operação será exibido no lado direito da tela.
 6. Se desejar copiar o resultado para a área de transferência, clique no botão "Copiar".
 
-## Suporte a Dispositivos Múltiplos
+## 💻 Suporte a Dispositivos Múltiplos
 
 * Este aplicativo é responsivo, adaptando-se automaticamente ao tamanho da tela para oferecer uma experiência consistente em computadores, tablets e celulares.
 
-# Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 * HTML
 * CSS
